@@ -1,9 +1,18 @@
 
-const Formulario = () => {
+const Formulario = ({citas, setCitas}) => {
+    const agregarCita = () => {
+        const cita = {
+
+        };
+
+        setCitas([...citas, cita]);
+
+    }
+
     return (
       <>
         <h2>Crear mi Cita</h2>
-        <form>
+        <form onSubmit={agregarCita}>
           <label>Nombre Mascota</label>
           <input type="text" name="mascota" class="u-full-width" placeholder="Nombre Mascota" value="" />
           
