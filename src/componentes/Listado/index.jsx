@@ -1,4 +1,5 @@
 import Cita from "../Cita";
+import './listado.css';
 
 const Listado = ({ citas, setCitas }) => {
     const eliminarCita = (citaAEliminar) => {

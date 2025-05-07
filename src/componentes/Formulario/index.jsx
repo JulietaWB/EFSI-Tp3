@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import './formulario.css';
 
 const Formulario = ({citas, setCitas}) => {
   const [mascota, setMascota] = useState("");

@@ -1,3 +1,5 @@
+import './cita.css';
+
 const Cita =  ({ cita, eliminarCita }) => {
   const { mascota, duenio, fecha, hora, sintomas } = cita;
   
