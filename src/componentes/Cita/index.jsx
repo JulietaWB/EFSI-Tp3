@@ -1,4 +1,6 @@
-const Cita = ({ mascota, duenio, fecha, hora, sintomas }) => {
+const Cita =  ({ cita, eliminarCita }) => {
+  const { mascota, duenio, fecha, hora, sintomas } = cita;
+  
   return (
     <div class="cita">
       <p>
@@ -16,14 +18,9 @@ const Cita = ({ mascota, duenio, fecha, hora, sintomas }) => {
       <p>
         Sintomas: <span>{sintomas}</span>
       </p>
-      <button class="button elimnar u-full-width" onSubmit={eliminarCita}>Eliminar ×</button>
+      <button onClick={() => eliminarCita(cita)}>Eliminar ×</button>
     </div>
   );
-};
-
-const eliminarCita = () =>
-{
-  
 };
 
 export default Cita;
