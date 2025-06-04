@@ -4,7 +4,7 @@ const Cita =  ({ cita, eliminarCita }) => {
   const { mascota, duenio, fecha, hora, sintomas } = cita;
   
   return (
-    <div class="cita">
+    <div className="cita">
       <p>
         Mascota: <span>{mascota}</span>
       </p>

@@ -27,6 +27,8 @@ const Formulario = ({citas, setCitas}) => {
     setFecha("");
     setHora("");
     setSintomas("");
+
+  
   };
 
 
@@ -53,7 +55,7 @@ const Formulario = ({citas, setCitas}) => {
           <textarea name="sintomas" value={sintomas}
           onChange={(e) => setSintomas(e.target.value)}> </textarea>
           
-          <button type="submit">Agregar Cita</button>
+          <button type="submit" >Agregar Cita</button>
         </form>
       </>
     );

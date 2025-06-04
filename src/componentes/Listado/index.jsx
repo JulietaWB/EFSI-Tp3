@@ -5,6 +5,7 @@ const Listado = ({ citas, setCitas }) => {
     const eliminarCita = (citaAEliminar) => {
       const nuevasCitas = citas.filter(c => c !== citaAEliminar);
       setCitas(nuevasCitas);
+      localStorage.setItem('citas', JSON.stringify(nuevasCitas));
     };
   
     return (
